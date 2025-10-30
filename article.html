@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Article - AuraArbora Lifestyle Blog</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" id="articleDescription" content="Read insightful lifestyle articles on AuraArbora covering fashion, beauty, home, travel, finance, and food topics with expert recommendations.">
+    <meta name="keywords" content="lifestyle article, blog post, AuraArbora">
+    <meta name="author" content="AuraArbora">
+    <link rel="canonical" id="articleCanonical" href="https://auraarbora.com/article.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" id="articleOgUrl" content="https://auraarbora.com/article.html">
+    <meta property="og:title" id="articleOgTitle" content="Article - AuraArbora">
+    <meta property="og:description" id="articleOgDescription" content="Read insightful lifestyle articles on AuraArbora.">
+    <meta property="og:image" id="articleOgImage" content="https://auraarbora.com/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer glow circle (Aura) -->
+                            <circle cx="25" cy="25" r="23" fill="#F5EBE8" opacity="0.6"/>
+                            <circle cx="25" cy="25" r="20" fill="#E8D5D3"/>
+                            
+                            <!-- Botanical branch (Arbora) -->
+                            <path d="M25 15 Q25 20 25 30" stroke="#9B8B7E" stroke-width="2" stroke-linecap="round"/>
+                            
+                            <!-- Left leaves -->
+                            <ellipse cx="20" cy="18" rx="4" ry="6" fill="#B8A398" transform="rotate(-30 20 18)"/>
+                            <ellipse cx="18" cy="24" rx="3.5" ry="5" fill="#C4A29E" transform="rotate(-40 18 24)"/>
+                            
+                            <!-- Right leaves -->
+                            <ellipse cx="30" cy="18" rx="4" ry="6" fill="#B8A398" transform="rotate(30 30 18)"/>
+                            <ellipse cx="32" cy="24" rx="3.5" ry="5" fill="#C4A29E" transform="rotate(40 32 24)"/>
+                            
+                            <!-- Top leaves (lighter) -->
+                            <ellipse cx="23" cy="16" rx="3" ry="4.5" fill="#D4BFB8" transform="rotate(-15 23 16)"/>
+                            <ellipse cx="27" cy="16" rx="3" ry="4.5" fill="#D4BFB8" transform="rotate(15 27 16)"/>
+                            
+                            <!-- Center flower/bud -->
+                            <circle cx="25" cy="28" r="3.5" fill="#DCC4BD"/>
+                            <circle cx="25" cy="28" r="2" fill="#F0DDD7"/>
+                            
+                            <!-- Decorative dots (sparkle effect) -->
+                            <circle cx="15" cy="15" r="1" fill="#C4A29E" opacity="0.8"/>
+                            <circle cx="35" cy="15" r="1" fill="#C4A29E" opacity="0.8"/>
+                            <circle cx="12" cy="25" r="0.8" fill="#B8A398" opacity="0.6"/>
+                            <circle cx="38" cy="25" r="0.8" fill="#B8A398" opacity="0.6"/>
+                        </svg>
+                        <span class="logo-text">AuraArbora</span>
+                    </a>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="category.html?cat=fashion">Fashion & Accessories</a></li>
+                                <li><a href="category.html?cat=beauty">Health & Beauty</a></li>
+                                <li><a href="category.html?cat=home">Home & Garden</a></li>
+                                <li><a href="category.html?cat=travel">Travel & Accommodation</a></li>
+                                <li><a href="category.html?cat=finance">Finance & Insurance</a></li>
+                                <li><a href="category.html?cat=food">Food & Beverage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="search-toggle" id="searchToggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="search-bar" id="searchBar">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+            <!-- Article Header -->
+            <div class="article-header">
+                <div class="article-meta-top">
+                    <a href="category.html" class="article-category" id="articleCategory"></a>
+                    <span class="article-date" id="articleDate"></span>
+                </div>
+                <h1 class="article-title-main" id="articleTitle"></h1>
+                <div class="article-author-info">
+                    <div class="author-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="author-details">
+                        <span class="author-name" id="articleAuthor"></span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Image -->
+            <div class="article-featured-image">
+                <img id="articleImage" src="" alt="">
+            </div>
+
+            <!-- Article Body -->
+            <div class="article-body" id="articleContent">
+                <!-- Content will be loaded dynamically -->
+            </div>
+
+            <!-- Products Section -->
+            <div class="products-section" id="productsSection">
+                <h2 class="products-title">Featured Products</h2>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+
+            <!-- Share Section -->
+            <div class="share-section">
+                <h3>Share This Article</h3>
+                <div class="share-buttons">
+                    <button class="share-btn facebook" onclick="shareOnSocial('facebook')">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </button>
+                    <button class="share-btn twitter" onclick="shareOnSocial('twitter')">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </button>
+                    <button class="share-btn pinterest" onclick="shareOnSocial('pinterest')">
+                        <i class="fab fa-pinterest"></i> Pinterest
+                    </button>
+                    <button class="share-btn linkedin" onclick="shareOnSocial('linkedin')">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </button>
+                </div>
+            </div>
+
+            <!-- Related Articles -->
+            <div class="related-articles" id="relatedArticles">
+                <h2>You Might Also Like</h2>
+                <div class="related-grid" id="relatedGrid">
+                    <!-- Related articles will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Connected</h2>
+                <p>Subscribe to our newsletter for the latest updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AuraArbora</h3>
+                    <p>Your cozy corner for lifestyle inspiration and thoughtful recommendations.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/auraarbora" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/auraarbora" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/auraarbora" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/auraarbora" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com/@auraarbora" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="category.html?cat=fashion">Fashion</a></li>
+                        <li><a href="category.html?cat=beauty">Beauty</a></li>
+                        <li><a href="category.html?cat=home">Home & Garden</a></li>
+                        <li><a href="category.html?cat=travel">Travel</a></li>
+                        <li><a href="category.html?cat=finance">Finance</a></li>
+                        <li><a href="category.html?cat=food">Food & Beverage</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@auraarbora.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (212) 964-7582</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 425 W 15th St, New York, NY 10011</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AuraArbora. All rights reserved. | <a href="privacy.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: underline;">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/articles-data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/article.js" defer></script>
+</body>
+</html>
+

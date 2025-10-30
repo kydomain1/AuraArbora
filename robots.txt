@@ -1,0 +1,24 @@
+# AuraArbora Robots.txt
+# Allow all search engines to crawl the website
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://auraarbora.com/sitemap.xml
+
+# Block crawling of documentation files
+Disallow: /*.md
+Disallow: *.txt
+
+# Block crawling of data files
+Disallow: /data/
+
+# Allow CSS and JS for better rendering
+Allow: /css/
+Allow: /js/
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+

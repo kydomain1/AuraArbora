@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | AuraArbora</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="The page you're looking for doesn't exist. Return to AuraArbora homepage to explore our lifestyle content.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-xl);
+            text-align: center;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+            color: var(--text-primary);
+            margin: var(--spacing-md) 0;
+        }
+        
+        .error-message {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: var(--spacing-sm) auto var(--spacing-lg);
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .btn-home,
+        .btn-back {
+            padding: 14px 32px;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .btn-home {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .btn-home:hover {
+            background: #B39390;
+            transform: translateY(-2px);
+        }
+        
+        .btn-back {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 2px solid var(--accent-light);
+        }
+        
+        .btn-back:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        
+        .suggestions {
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background: var(--accent-light);
+            border-radius: var(--radius-md);
+            max-width: 600px;
+        }
+        
+        .suggestions h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .suggestions ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .suggestions li {
+            margin: var(--spacing-xs) 0;
+        }
+        
+        .suggestions a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .suggestions a:hover {
+            color: var(--text-primary);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 80px;
+            }
+            
+            .error-title {
+                font-size: 24px;
+            }
+            
+            .error-message {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-message">
+            Oops! The page you're looking for seems to have wandered off. 
+            Don't worry, we'll help you find your way back.
+        </p>
+        
+        <div class="error-actions">
+            <a href="index.html" class="btn-home">Back to Home</a>
+            <a href="javascript:history.back()" class="btn-back">Go Back</a>
+        </div>
+        
+        <div class="suggestions">
+            <h3>Popular Pages</h3>
+            <ul>
+                <li><a href="index.html">Home - Latest Articles</a></li>
+                <li><a href="category.html?cat=fashion">Fashion & Accessories</a></li>
+                <li><a href="category.html?cat=beauty">Health & Beauty</a></li>
+                <li><a href="category.html?cat=home">Home & Garden</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+

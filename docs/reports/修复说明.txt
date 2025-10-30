@@ -1,0 +1,34 @@
+✅ 文章显示问题已修复！
+
+【问题原因】
+直接双击打开HTML文件时，浏览器的安全限制阻止了JavaScript读取本地JSON文件，导致显示"Unable to load articles at this time"。
+
+【解决方案】
+已将所有文章数据直接嵌入到JavaScript代码中，现在可以：
+✅ 直接双击HTML文件打开
+✅ 无需本地服务器
+✅ 所有功能正常工作
+
+【修改的文件】
+1. 新建: js/articles-data.js - 包含所有6篇文章的完整数据
+2. 修改: js/main.js - 使用嵌入数据而不是fetch
+3. 修改: js/article.js - 使用嵌入数据而不是fetch
+4. 修改: 所有HTML文件 - 引入articles-data.js
+
+【使用方法】
+现在您可以：
+1. 直接双击 index.html 打开网站
+2. 所有文章会立即显示
+3. 搜索、分类、分页都正常工作
+4. 点击文章可以查看详情
+
+【备注】
+- data/articles.json 文件保留作为备份
+- 如果将来使用服务器，可以改回fetch方式
+- 现在的方式更适合静态部署和本地使用
+
+祝使用愉快！🎉
+
+
+
+
