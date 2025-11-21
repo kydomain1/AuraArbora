@@ -170,7 +170,7 @@ function createArticleCard(article) {
                 </div>
                 <h3 class="article-title">${article.title}</h3>
                 <p class="article-excerpt">${article.excerpt}</p>
-                <a href="article.html?id=${article.id}" class="read-more">
+                <a href="${article.link || `article.html?id=${article.id}`}" class="read-more">
                     Read More <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
